@@ -2,7 +2,7 @@
 "update_url": "https://clients2.google.com/service/update2/crx",
 
   "manifest_version": 2,
-  "name": "Web Timer",
+  "name": "Web personalization tool",
   "version": "1.4.8",
   "description": "Keep track of how you spend your time on the web.",
   "icons": { "128": "icon_128.png" },
@@ -14,7 +14,7 @@
     "tabs"
   ],
   "browser_action": {
-    "default_title": "Web Timer",
+    "default_title": "Web personalization tool",
     "default_icon": "icon_19.png",
     "default_popup": "popup.html"
   },
