@@ -16,7 +16,7 @@ function setDefaults() {
   if (!localStorage["blacklist"]) {
     localStorage["blacklist"] = JSON.stringify(["example.com"]);
   }
-  // Set number of days Web Timer has been used
+  // Set number of days Web personalization tool has been used
   if (!localStorage["num_days"]) {
     localStorage["num_days"] = 1;
   }
@@ -101,7 +101,7 @@ function checkDate() {
     localStorage["total"] = JSON.stringify(total);
     // Combine entries that are not part of top 500 sites
     combineEntries(500);
-    // Keep track of number of days web timer has been used
+    // Keep track of number of days web personalization tool has been used
     localStorage["num_days"] = parseInt(localStorage["num_days"]) + 1;
     // Update date
     localStorage["date"] = todayStr;
