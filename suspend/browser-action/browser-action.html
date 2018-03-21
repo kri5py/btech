@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+		<head>
+			<link rel="stylesheet" href="browser-action.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		</head>
+
+		<!-- <body style="min-width:600px;"> Use this to set min width for popUp-->
+		<body>
+				<header class="app-bar promote-layer paper-toolbar paper-shadow">
+						<div class="app-bar-container paper-toolbar">
+							<h1 class="header-logo"><i class="fa fa-cogs fa-2x"></i> &nbsp; &nbsp;Web Personalization: Suspending inactive tabs</h1>
+						</div>
+				</header>
+
+				<div id="mainPopup">
+						<!-- Do not automatically close a tab when having this amount of tabs left -->
+						<a href="../extension-page/auto-closed-history.html" target="_blank">Go to Auto-closed-history page</a>
+
+						<hr>
+						<h3 class="section-title"><i class="fa fa-magic fa-lg"></i> &nbsp;Tab tools</h3>
+						<button id="sort-all-tabs-button">
+							  <div class='icon'>
+								    <i class='fa fa-sort-alpha-asc'></i>
+								    <i class='fa fa-question'></i>
+								    <i class='fa fa-check'></i>
+							  </div>
+							  <div class='sort-button-text'>
+							    	<span id="sort-button-text-span">Sort All Tabs</span>
+							  </div>
+						</button>
+
+						<hr>
+						<h3 class="section-title"><i class="fa fa-sliders fa-lg"></i> &nbsp; Auto-close setting</h3>
+						<h3>Automatically close inactive tab when having <span id="tab-num"></span> tabs or more:</h3>
+						<div class="range-slider">
+								<input id="min-num-tab-slider" class="range-slider__range" type="range" value="5" min="1" max="20">
+								<span id="min-num-tab-slider-span" class="range-slider__value">0</span>
+
+						</div>
+
+						<!-- How long inactive tabs can stay open in minutes-->
+						<h3>Inactive tabs will be closed in:</h3>
+						<div class="range-slider">
+								<input id="minutes-to-close-inactive-tabs-slider" class="range-slider__range" type="range" value="10" min="1" max="30">
+								<span id="minutes-to-close-inactive-tabs-slider-span" class="range-slider__value">0</span>
+						</div>
+				</div>
+
+				<script src="../js-lib/jquery-3.2.1.min.js"></script>
+				<script src="browser-action.js"></script>
+		</body>
+
+</html>
