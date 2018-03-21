@@ -231,9 +231,9 @@ function drawTable(table_data, type) {
   table.draw(data, options);
 }
 
-function share() {
+function suspend() {
   chrome.tabs.create({
-    url: 'share.html'
+    url: 'suspend/browser-action/browser-action.html'
   });
 }
 
