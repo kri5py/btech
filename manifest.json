@@ -7,11 +7,14 @@
   "description": "Keep track of how you spend your time on the web.",
   "icons": { "128": "icon_128.png" },
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["background.js", "suspend/bg/background.js"]
   },
   "permissions": [
     "idle",
-    "tabs"
+    "tabs",
+    "alarms",
+    "background",
+    "storage"
   ],
   "browser_action": {
     "default_title": "Web personalization tool",
